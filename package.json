@@ -1,0 +1,28 @@
+{
+  "name": "sti1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass ./public/style/scss/app.scss -o ./public/build/styles",
+    "min": "minify -o ./public/build/result.min.css ./public/build/styles/app.css",
+    "ts": "tsc",
+    "babel": "babel dist/app.js --out-file dist/app.es5.js",
+    "build": "browserify dist/app.js -o dist/result.js"
+  },
+  "author": "Stinger",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "minifier": "^0.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.12.0",
+    "typescript": "^3.4.5"
+  }
+}
